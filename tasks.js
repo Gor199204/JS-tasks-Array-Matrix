@@ -22,7 +22,7 @@ function randomNumber() {
   return number;
 }
 
-// create matrix 
+// // create matrix 
 function matrix(n, m) {
   const arrMatrix = [];
   for (let i = 0; i < n; i++) {
@@ -35,8 +35,8 @@ function matrix(n, m) {
   return arrMatrix;
 }
 
-const b = (matrix(n, m));
-// console.log(b);
+// const b = (matrix(n, m));
+// // console.log(b);
 
 // tasks 38 page 120
 // let sum = 0;
@@ -101,12 +101,81 @@ const b = (matrix(n, m));
 
 // const s = (matrix(n, m));
 // console.log(s);
+
+// let min = 0;
 // for (let i = 0; i < s.length; i++) {
-//   for (let j = 1; j < s.length; j++) {
-//     if (s[i][j] > min) {
-//       min = s[i][j];
+//   let min = s[0][i]
+//   for (let j = 0; j < s[i].length; j++) {
+//     if (s[j][i] < min) {
+//       min = s[j][i];
 //     }
 //   }
 //   console.log(`min = ${min}`);
-
 // }
+
+
+// task 42 page 124
+
+// const s = (matrix(n, m));
+// console.log(s);
+// arrPositive = [];
+// for (let i = 0; i < s.length; i++) {
+//     let positive = 0
+//     for (let j = 0; j < s[i].length; j++) {
+//       if (s[i][j] >= 0 && s[i][j] !== (-0)) {
+//         positive++;
+//       }
+//     }
+//     arrPositive.push(positive);
+//   }
+
+//   console.log(arrPositive);
+
+
+
+// // task 43 page 124
+
+// const c = (matrix(n, m));
+
+// // console.log(c);
+// let sum = 0 ;
+
+// for (let i = 0; i < c.length; i++) {
+//   sum = 0
+//   let min = c[i][0];
+//   for (let j = 1; j < c[i].length; j++) {
+//     if(min >  c[i][j]) {
+//       sum += min;
+//       sum += c[i][j];
+//       min = c[i][j];
+//     }
+//   }
+//   console.log(sum);
+// }
+
+// // task 44 page 126
+
+// function matrix(n, m) {
+//   const arrRow = [];
+//   const arr = [];
+//   for (let i = 0; i < n; i++) {
+//     arrRow.push(Math.floor(Math.random() * 10));
+//   }
+//   arr.push(arrRow);
+//   for (let i = 1; i < m; i++) {
+//     const row = [];
+//     for (let j = 0; j < n; j++) {
+//       row.push(Math.pow(arrRow[j], i+1))
+//     }
+//     arr[i] = (row);
+//   }
+
+//   return arr;
+// }
+
+// const b = matrix(n, m);
+// console.log(b);
+
+
+
+
