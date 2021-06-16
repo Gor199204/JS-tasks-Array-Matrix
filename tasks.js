@@ -11,6 +11,7 @@ function checkInputNumber() {
 
 const n = checkInputNumber();
 const m = checkInputNumber();
+const p = checkInputNumber();
 
 
 // Random number
@@ -34,6 +35,18 @@ function matrix(n, m) {
   }
   return arrMatrix;
 }
+
+// Create Array
+function arrFunc(n) {
+  const arr = [];
+  for (let i = 0; i < n; i++) {
+      arr.push(randomNumber());
+  }
+  return arr;
+}
+
+// const a = arrFunc(n);
+// console.log(a);
 
 // const b = (matrix(n, m));
 // // console.log(b);
@@ -175,6 +188,115 @@ function matrix(n, m) {
 
 // const b = matrix(n, m);
 // console.log(b);
+
+// task 45 page 129
+
+// const b = matrix(n, m);
+// // console.log(b);
+// const a = arrFunc(n);
+// // console.log(a);
+
+// for (let i = 0; i < n; i++) {
+//   let sum = 0;
+//   for (let j = 0; j < n; j++) {
+//     sum += a[i] * b[i][j]
+//   }
+//   console.log(sum);
+// }
+
+// // task 46 page 129
+
+// const a = matrix(n, m);
+// console.log(a);
+// const b = matrix(m, p);
+// console.log(b);
+// const c = [];
+
+// for (let i = 0; i < n; i++) {
+//   const singleArr = [];
+//   for (let j = 0; j < m; j++) {
+//       singleArr.push(a[i][j] * b[j][i]);
+//   }  
+//     if (singleArr.length !== b[i].length) {
+//       for (let k = singleArr.length; k < p; k++) {
+//         singleArr.push(b[i][k]);
+//     }
+//   }
+//   c.push(singleArr);
+// }
+// console.log(c);
+
+// task 47 page 131
+
+// const b = matrix(n, n);
+// let sum = 0;
+
+// for (let i = 1; i < n; i++) {
+//   let oddSum = 0;
+//   for (let j = 0; j < i; j++) {
+//     if ((i + j) % 2 !== 0) {
+//       oddSum += Math.pow((b[i][j], 2));
+//     }
+//     oddSum = Math.sqrt(oddSum / j);
+//     // console.log(oddSum);
+//   }
+//   sum += oddSum;
+// }
+
+// console.log(sum);
+
+// task 48 page 133
+
+// const b = matrix(n, n);
+
+// for (let i = n-1; i < 0; i--) {
+//   let min = 0;
+//   for (let j = b[i].length-1; j <= i; j--) {
+//     if (b[i][j] % 2 === 0) {
+//       if (min > b[i][j]) {
+//         min = b[i][j];
+//       } else if (b[i][j] > min){
+//         min = b[i][j];
+//       }
+//     }
+//   }
+//   console.log(min);
+// }
+
+// task 49 page 135
+
+// const general = [];
+// let alien = [];
+// const arr = matrix(n, n);
+// const a = [];
+// // console.log(arr);
+// for (let i = 0; i < arr.length; i++) {
+//   for(let j = 0; j <arr[i].length; j++) {
+//     if(i + j === arr.length-1) {
+//       alien.push(arr[i][j]);
+//     }
+//     if (i === j) {
+//       general.push(arr[i][j]);
+//     }
+//   }
+// }
+
+// for (let k = 0; k < glxavor.length; k++) {
+//   general[k] > alien[k] ? a.push(general[k]) : a.push(alien[k]);
+// }  
+// console.log(a);
+
+// task 50 page 137
+
+// const c = matrix(n, n);
+
+// for (let i = 0; i < n; i++) {
+//   for (let j = n - 1; j > 0; j++) {
+
+//   }
+// }
+
+
 
 
 
